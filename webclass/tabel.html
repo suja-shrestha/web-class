@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <tabel>
+      <label for="name">Enter name</label>
+      <input type="text" name="fnmae" id="name" placeholder="Enter name" />
+      <hr />
+      <label for="email">Enter email</label>
+      <input
+        type="email"
+        name="emailaddress"
+        id="email"
+        placeholder="enter email"
+      />
+      <hr />
+      <label for="pass"> Enter password</label>
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        placeholder="enter password"
+      />
+      <hr />
+      select gender:
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">male</label>
+      <input type="radio" name="gender" value="girl" id="girl" />
+      <label for="girl">female</label>
+      <hr />
+      <select name="years" id="">
+        <script>
+          for (var a = 0; a < 2025; a++)
+            document.write(`<option>${a}</option>`);
+        </script>
+      </select>
+      <hr />
+      cources:<input type="checkbox" id="course" name="course" />
+      <label for="course">PHP</label>
+      <input type="checkbox" id="java" name="course" />
+      <label for="java">Java</label>
+      <input type="checkbox" id="python" name="course" />
+      <label for="python">Python</label>
+      <hr />
+      <label for="date"></label>
+      <hr />
+      <input type="date" id="date" name="date" placeholder="select date" />
+      <hr />
+      <label for="url">enter url</label>
+      <br />
+      <input type="url" id="url" name="url" placeholder="enter url" />
+      <hr />
+      <label for="date"></label>
+      <hr />
+      <input type="date" id="date" name="date" placeholder="enter date" />
+      <hr />
+      <textarea></textarea>
+      <hr />
+      <!-- <label></label> -->
+      <input type="week" name="week" />
+      <hr />
+      <!-- <label></label> -->
+      <input type="month" name="" id="" />
+      <hr />
+      <!-- <label></label> -->
+      <input type="range" name="" id="" />
+      <hr />
+      <button>send</button>
+      <hr />
+      <input type="submit" value="send it" />
+      <hr />
+      <input
+        type="image"
+        src="https://th.bing.com/th/id/R.4c3e961aacfa25b22534ecd076655434?rik=SQhPHsjTmdd2zg&pid=ImgRaw&r=0"
+        width="40px"
+      />
+      <hr />
+      <input type="reset" name="" id="" />
+      <hr />
+    </tabel>
+  </body>
+</html>
