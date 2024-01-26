@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.proposal-container {
+    text-align: center;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#no-button {
+    background-color: #ff0000;
+}
+
+.hidden {
+    display: none;
+}
+.congratulations {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.confetti-container {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.confetti-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#f44, #fdd, #fff, #fdd, #f44);
+    background-size: 20px 20px;
+    animation: confetti 5s linear infinite;
+}
+
+@keyframes confetti {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.hearts-container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.heart {
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #e74c3c;
+    height: 0;
+    width: 20px;
+    top: -50px;
+    animation: rainHeart 5s linear infinite;
+}
+
+@keyframes rainHeart {
+    0% {
+        left: -20px;
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        left: 100%;
+        top: 100%;
+        opacity: 1;
+    }
+}
