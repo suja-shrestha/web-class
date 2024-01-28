@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://broadwayinfosys.com/search/result">
+        <input type="text" name="search">
+        <button>send</button>
+    </form>
+    <form method="post" novalidate><!--post/get-->
+        <!--novalidate removes all the function like autofocus,required etc-->
+        food: <select name="food" multiple>
+            <optgroup label="fruits">
+                <option value="mango">mango</option>
+                <option value="apple">aapple</option>
+            </optgroup>
+            <optgroup label="junk food">
+                <option value="chips">chips</option>
+                <option value="kurmuray">kurmuray</option>
+            </optgroup>
+            <hr>
+            <input type="text" name="frt" list="abc">
+            <datalist id="abc">
+                <option>watermellon</option>
+                <option>suntala</option>
+                <option>apple</option>
+            </datalist>
+        </select>
+        <hr>
+        autocomplete<input type="text" name="emai" autocomplete="off">
+        <hr>
+        autofocus<input type="text" name="normal2" autofocus>
+        <hr>
+        required<input type="text" name="normal3" required>
+        <hr>
+        readonly<input type="text" name="normal4" value="sujal" readonly>
+        <hr>
+        hidden<input type="text" name="normal5" value="ajambari" hidden>
+        <hr>
+        file<input type="file" name="file" accept="image/*">
+        <hr>
+        <input type="datetime-local">
+        <hr>
+        <button>send</button>
+    </form>
+</body>
+
+</html>
