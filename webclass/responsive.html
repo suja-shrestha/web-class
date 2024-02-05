@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (min-width:900px) {
+            .head {
+                width: 100%;
+                height: 80px;
+                background: red;
+            }
+
+            .left {
+                background: yellow;
+                width: 30%;
+                height: 500px;
+                
+            }
+
+            .main {
+                background: white;
+                width: 40%;
+                height: 500px;
+               
+
+            }
+
+            .right {
+                background-color: green;
+                width: 30%;
+                height: 500px;
+                
+            }
+            .flex{
+                display: flex;
+
+            }
+            .footer {
+                width: 100%;
+                height: 80px;
+                background: red;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box head">HEADER</div>
+    <div class="flex">
+        <div class="box left">LEFT</div>
+        <div class="box main">MAIN</div>
+        <div class="box right">RIGHT</div>
+    </div>
+    <div class="box footer">FOOTER</div>
+</body>
+
+</html>
