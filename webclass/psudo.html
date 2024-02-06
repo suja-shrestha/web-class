@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lorem:first-child {
+            background-color: green !important;
+        }
+
+        .lorem:last-child {
+            background-color: blue !important;
+        }
+
+        .lorem:nth-child(odd) {
+            background-color: red;
+        }
+
+        .lorem:nth-child(even) {
+            background-color: aqua;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            color: aqua;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        input:required {
+            border-radius: 15px;
+        }
+
+        input:focus {
+            outline: solid 2px aqua;
+        }
+
+        input:read-only {
+            color: yellow;
+        }
+
+        input:disabled {
+            background-color: pink;
+        }
+
+        input:checked {
+            height: 100px;
+            width: 100px;
+        }
+
+        :root {
+            --brand: red;
+            --height: 200px;
+            --background: aqua;
+        }
+
+        h1 {
+            height: var(--height);
+            color: var(--brand);
+            border: solid var(--brand) 2px;
+            width: var(--height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello</h1>
+    <div>
+        <input type="text" required name="" id="">
+        <input type="checkbox">
+        <input type="text" readonly>
+        <input type="text" disabled>
+        <input type="text" required>
+        <a href="fb.com">hello</a>
+        <a href="https://www.google.com/">google</a>
+        <div class="psudoclass">lorem</div>
+        <div class="lorem">lorem</div>
+        <div class="lorem">lorem</div>
+        <div class="lorem">lorem</div>
+        <div class="lorem">lorem</div>
+        <div class="lorem">lorem</div>
+        <div class="lorem">lorem</div>
+        <div class="lorem">lorem</div>
+    </div>
+</body>
+
+</html>
